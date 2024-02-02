@@ -6,8 +6,8 @@ const HomeSideBar = () => {
   return (
     <Box className="bg-background p-4 rounded-lg flex flex-col items-center">
       <ul className="list-none p-0 m-0 flex flex-col items-center">
-        {games.map((game) => (
-          <li key={game.name} className="mb-6">
+        {games.map((game, index) => (
+          <li key={index} className="mb-6">
             <Button>{game.name}</Button>
           </li>
         ))}

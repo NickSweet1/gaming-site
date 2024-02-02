@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import "./styles.css";
 import "@radix-ui/themes/styles.css";
 import { Theme, ThemePanel } from "@radix-ui/themes";
-import { Games, Home, Highscores } from "./pages/index";
+import { Games, Home, Highscores, Login, UnderConstruction } from "./pages/index";
 
 const App = () => (
   <Theme
@@ -16,8 +16,8 @@ const App = () => (
       <NavBar />
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/games" exact element={<Games />} />
-        <Route path="/highscores" exact element={<Highscores />} />
+        <Route path="/underconstruction" exact element={<UnderConstruction />} />
+        <Route path="/login" exact element={<Login />} />
       </Routes>
     </BrowserRouter>
     {/* <ThemePanel /> */}

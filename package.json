@@ -6,6 +6,7 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.15.7",
+    "@prisma/client": "^5.9.1",
     "@radix-ui/themes": "^2.0.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -30,6 +31,9 @@
       "react-app/jest"
     ]
   },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -41,5 +45,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "tailwind.config.js",
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "prisma": "^5.9.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
